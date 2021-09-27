@@ -151,31 +151,44 @@ console.log (frasesIguais)
 function checaRenovacaoRG() {
   // escreva seu código aqui
 
-let qualAnoAtual = Number(prompt("Qual ano estamos?"))
-let anoDeNascimentoUsuario = Number(prompt("Qual seu ano de nascimento?"))
-let anoEmissaoRG = Number(prompt("Qual ano de emissão do seu RG?"))
+  let anoAtual =  prompt("Qual ano atual")
+  let nascimento = prompt("Qual sua data de nascimento")
+  let anoEmissao = prompt("Qual ano de emissao do RG")
+  let idade = anoAtual - nascimento
+  let anoRG = anoAtual - anoEmissao 
 
-let idadeexercicio10 = qualAnoAtual - anoDeNascimentoUsuario
-let tempodeRG = qualAnoAtual - anoEmissaoRG
+  console.log((idade <= 20 && anoRG >= 5 ) || ((idade > 20 && idade < 50) && anoRG >= 10) || (idade >= 50 && anoRG >= 15))
+ }
 
-let vinteanos = idadeexercicio10 <=20
-let vinteumcinquenta = idadeexercicio10 >20 <=50
-let cinquentaanos = idadeexercicio10 >50
-
-let RGvinte = tempodeRG >= 5
-let RGvinteumcinquenta = tempodeRG = 10
-let RGcinquenta = tempodeRG = 15
-
-console.log (vinteanos&&RGvinte||vinteumcinquenta&&RGvinteumcinquenta||cinquentaanos&&RGcinquenta)
-
-}
 
 // Exercício 11
 function checaAnoBissexto() {
   // escreva seu código aqui
+
+let anoConsulta = prompt("Digite um ano:")
+
+
+  bissexto1 = (anoConsulta % 400) === 0
+  bissexto2 = ((anoConsulta % 4 === 0) && (anoConsulta % 100 !== 0))
+  bissextoNao = anoConsulta && bissexto1 && bissexto2
+
+console.log (bissextoNao || bissexto1 || bissexto2)
+
+
 }
 
 // Exercício 12
 function checaValidadeInscricaoLabenu() {
   // escreva seu código aqui
+
+  const idade = prompt ("Você tem mais de 18 anos?")
+  const ensinoMedio = prompt ("Você possui o ensino médio completo?")
+  const disponibilidadeHorario = prompt ("Você possui disponibilidade no horário do curso?")
+  
+  let confirmação1 = idade.includes("sim")
+  let confirmação2 = ensinoMedio.includes("sim")
+  let confirmação3 = disponibilidadeHorario.includes("sim")
+
+ console.log (confirmação1&&confirmação2&&confirmação3)
+
 }
