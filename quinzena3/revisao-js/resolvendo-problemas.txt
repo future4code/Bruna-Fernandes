@@ -1,0 +1,9 @@
+Resumo dos passos para resolução de problemas:
+
+1º Devemos ter atençao nas solicitações: levantar palavras chaves para o serviço
+2º Ler novamente para procurar condições para o codigo, bons nomes para variáveis.
+3º Quais meus dados de entradade e o que espero para saidas, o que quero de retorno do meu codigo, pensar nas possiveis funções.
+4º Esquema visual para as situações, diagramas lógicos, cenários de entradas e saídas.
+5º Criar um código manual (para base de dados), quais as melhores soluções.
+6º Testar as soluções, padronizar.
+7º Conferencia final: Rever nomes das variáveis, rever as funções, retirar comentários e testes.
