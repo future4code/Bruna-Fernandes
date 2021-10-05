@@ -25,6 +25,13 @@ return pares
 // EXERCÍCIO 03
 function retornaNumerosPares(array) {
 
+  let somentePares = []
+  for (let item of array){
+    if (item % 2 === 0){
+      somentePares.push(item)
+    }
+  }
+return somentePares
 }
 
 // EXERCÍCIO 04
