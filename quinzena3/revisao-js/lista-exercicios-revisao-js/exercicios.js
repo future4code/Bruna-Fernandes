@@ -48,7 +48,8 @@ return maiorNumero
 
 // EXERCÍCIO 05
 function retornaQuantidadeElementos(array) {
-  
+  let tamanhoArray = array.length 
+  return tamanhoArray
 }
 
 // EXERCÍCIO 06
