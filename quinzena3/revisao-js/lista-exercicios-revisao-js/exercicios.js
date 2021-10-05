@@ -12,7 +12,14 @@ return arrayInvertida
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
 
- 
+let pares = []
+for (let item of array){
+  if (item % 2 === 0){
+    let elevados = item * item
+    pares.push(elevados)
+}
+}
+return pares
 }
 
 // EXERCÍCIO 03
