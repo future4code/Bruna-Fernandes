@@ -37,6 +37,13 @@ return somentePares
 // EXERCÍCIO 04
 function retornaMaiorNumero(array) {
 
+  let maiorNumero = 0
+  for (let item of array){
+    if (item>maiorNumero){
+      maiorNumero = item
+    }
+    }
+return maiorNumero
 }
 
 // EXERCÍCIO 05
