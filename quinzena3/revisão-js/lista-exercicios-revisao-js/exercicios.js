@@ -163,10 +163,16 @@ return pessoa
 // EXERCÍCIO 16A
 function maioresDe18(arrayDePessoas) {
 
+let filtroAdultos = arrayDePessoas.filter((arrayDePessoas)=>{
+  return arrayDePessoas.idade>=18
+})
+return filtroAdultos
 }
 
 // EXERCÍCIO 16B
 function menoresDe18(arrayDePessoas) {
+
+
 
 }
 
