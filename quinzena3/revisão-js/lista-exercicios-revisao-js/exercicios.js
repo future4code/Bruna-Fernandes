@@ -202,6 +202,16 @@ return paraString
 // EXERCÍCIO 17C
 function verificaParidade(array) {
 
+let verificação = array.map((item)=>{
+
+  if (item %2===0){
+    return `${item} é par`
+  }
+  else{
+    return `${item} é ímpar`
+  }
+  })
+  return verificação
 }
 
 // EXERCÍCIO 18A
