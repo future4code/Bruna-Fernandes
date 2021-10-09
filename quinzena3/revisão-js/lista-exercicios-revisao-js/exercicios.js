@@ -172,18 +172,31 @@ return filtroAdultos
 // EXERCÍCIO 16B
 function menoresDe18(arrayDePessoas) {
 
-
-
+let filtroMenores = arrayDePessoas.filter((arrayDePessoas)=>{
+  return arrayDePessoas.idade<18
+})
+return filtroMenores
 }
 
 // EXERCÍCIO 17A
 function multiplicaArrayPor2(array) {
-
+let duasvezes = array.map ((array)=>{
+  return array*2
+})
+return duasvezes
 }
 
 // EXERCÍCIO 17B
 function multiplicaArrayPor2S(array) {
 
+ let duasvezes = array.map ((array)=>{
+  return array*2
+})
+
+let paraString = duasvezes.map ((duasvezes)=>{
+  return duasvezes.toString()
+})
+return paraString
 }
 
 // EXERCÍCIO 17C
