@@ -75,24 +75,24 @@ function checaTriangulo(a, b, c) {
 
 // EXERCÍCIO 09
 function comparaDoisNumeros(num1, num2) {
-  let maior = 0
-  let menor = 0
+  // let maior = 0
+  // let menor = 0
 
-  if (num1>num2){
-    maior = num1
-    menor = num2
-  }
-  else{
-    maior = num2
-    menor = num1 
-  }
-  let maiorDivisivelPorMenor = (maior, menor) =>{
-    if (maior % menor === 0){
-      return true
-    }
-    return maiorDivisivelPorMenor
-  }
-   let diferenca = maior - menor
+  // if (num1>num2){
+  //   maior = num1
+  //   menor = num2
+  // }
+  // else{
+  //   maior = num2
+  //   menor = num1 
+  // }
+  // let maiorDivisivelPorMenor = (maior, menor) =>{
+  //   if (maior % menor === 0){
+  //     return true
+  //   }
+  //   return maiorDivisivelPorMenor
+  // }
+  //  let diferenca = maior - menor
 
   // Formato do objeto a ser retornado:
   // {
@@ -101,22 +101,40 @@ function comparaDoisNumeros(num1, num2) {
   //   diferenca: Z
   // }
 
+
 }
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
 
-let maiores = []
-
-
-
-
+  const novaArray =[]
+  for (item of array){
+    let contador = 0
+    for (itemComparado of array){
+      if (item> itemComparado){
+        contador = contador + 1
+      }
+    }
+    novaArray[contador] = item
+    }
+  const segundos = [novaArray[novaArray.length-2],novaArray[1]]
+  return segundos
 
 }
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
-
+  const novaArray =[]
+  for (item of array){
+    let contador = 0
+    for (itemComparado of array){
+      if (item> itemComparado){
+        contador = contador + 1
+      }
+    }
+    novaArray[contador] = item
+  }
+  return novaArray
 }
 
 // EXERCÍCIO 12
@@ -216,12 +234,20 @@ let verificação = array.map((item)=>{
 
 // EXERCÍCIO 18A
 function retornaPessoasAutorizadas(pessoas) {
+let permissoes = pessoas.filter ((pessoas)=>{
+return (pessoas.altura >=1.5 && pessoas.idade>14 && pessoas.idade <60)
 
+})
+return permissoes
 }
 
 // EXERCÍCIO 18B
 function retornaPessoasNaoAutorizadas(pessoas) {
+ let excluidos = pessoas.filter ((pessoas)=>{
+  return (pessoas.altura < 1.5 && pessoas.idade <=14 && pessoas.idade >= 60)
+ })
 
+ return excluidos
 }
 
 // EXERCÍCIO 19A
