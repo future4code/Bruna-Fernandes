@@ -244,7 +244,7 @@ return permissoes
 // EXERCÍCIO 18B
 function retornaPessoasNaoAutorizadas(pessoas) {
  let excluidos = pessoas.filter ((pessoas)=>{
-  return (pessoas.altura < 1.5 && pessoas.idade <=14 && pessoas.idade >= 60)
+  return (pessoas.altura <1.5 || pessoas.idade <=14 || pessoas.idade >= 60)
  })
 
  return excluidos
