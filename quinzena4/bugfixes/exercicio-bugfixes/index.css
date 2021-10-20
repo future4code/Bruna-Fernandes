@@ -74,7 +74,9 @@ div img {
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
-        
+    font-size: 35px;
+    text-align: center;
+    line-height: 1cm;        
 }
 
 #container-de-descricao>ol {
@@ -106,7 +108,7 @@ div:last-child {
 
 table {
     width: 60%;
-}
+ }
 
 td button {
     background-color: #fadf63;
