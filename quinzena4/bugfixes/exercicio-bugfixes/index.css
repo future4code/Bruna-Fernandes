@@ -112,7 +112,10 @@ table {
     width: 60%;
     text-align: center; 
     vertical-align: middle;
- }
+    position:relative;
+    top:50%; 
+    left: 20%;
+}
 
 td button {
     background-color: #fadf63;
@@ -145,6 +148,9 @@ color:coral
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    position:relative;
+    top:50%; 
+    left:50%;
 }
 
 #back-button:hover {
