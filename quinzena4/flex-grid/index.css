@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+#container {
+    height: auto;
+    display: grid;
+    grid-template-rows: 100% 500% 100%;
+    grid-template-columns: 10% 80% 10%;
+      
+}
+.classe1{
+    background-color: mediumvioletred;
+    justify-self: stretch;
+    align-self: stretch;
+    align-items: center;
+}
+
+.Classe2{
+    background-color: mediumvioletred;
+    grid-column: 2 / span 1;
+    justify-content: center;
+}
+.Classe3{
+    background-color: mediumvioletred;
+}
+.Classe4{
+    background-color: #f2d0e0;
+}
