@@ -1,0 +1,54 @@
+div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+
+#header{
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: space-evenly;
+}
+body{
+    background-color: rgb(238, 200, 185);
+}   
+
+h1{
+    font-size: 70px;
+    color: cadetblue;
+}
+h2{
+    padding: 20px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.Blackjack{
+    display: flex;
+    align-items: center;
+    border: 5px solid black;
+    background-color:rgb(201, 195, 144);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.Botão{
+    border: 20;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration-color: black;
+    background-color: rgba(61, 196, 49, 0.466);
+    font-family: Luminari, fantasy;
+} 
+.Atividades{
+    border: plum solid 2px;
+}
+.Habilidades{
+    border: plum solid 2px;
+}
