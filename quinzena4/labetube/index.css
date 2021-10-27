@@ -1,0 +1,33 @@
+.Videos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.cabeçalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 20px;
+    background-color: orangered;
+}
+h1{
+    font-size: 60px;
+    color:grey;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer{
+    display: flex;
+    background-color: coral;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
