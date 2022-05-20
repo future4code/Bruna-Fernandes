@@ -1,0 +1,41 @@
+GET http://localhost:3003/users/ffc32bee-a0c4-40d2-ae4d-7b710a5f602c
+
+####
+GET http://localhost:3003/users
+
+####
+POST http://localhost:3003/users
+Content-Type: application/json
+
+{
+    "name": "Bruna",
+    "email": "bru@bru",
+    "password":"1234"
+}
+
+####
+GET http://localhost:3003/products
+
+
+####
+POST http://localhost:3003/products
+Content-Type: application/json
+
+{
+    "name": "Computador",
+    "price": "5.500",
+    "image_url":"https://pixabay.com/pt/photos/computador-port%c3%a1til-5673901/"
+}
+
+####
+POST http://localhost:3003/purchases
+Content-Type: application/json
+
+{
+    "user_id": "ffc32bee-a0c4-40d2-ae4d-7b710a5f602c",
+    "product_id":"b699e09d-83e8-43c9-8553-7cc88d708763",
+    "quantity": 3
+}
+
+####
+GET http://localhost:3003/users/ffc32bee-a0c4-40d2-ae4d-7b710a5f602c/purchases
